@@ -8,6 +8,10 @@ first_half_num = 99
 
 
 #find reverse_num
+units = first_half_num%10
+tens = (first_half_num - units)
+hundreds = 
+
 #put first_half_num and reverse_num together for full_num
 
 
