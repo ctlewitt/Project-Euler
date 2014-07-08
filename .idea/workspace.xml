@@ -23,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="prob5-smallest_multiple.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/prob5-smallest_multiple.py">
+      <file leaf-file-name="prob1-multiples_of_3_and_5.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/prob1-multiples_of_3_and_5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32394367" vertical-offset="935" max-vertical-offset="1290">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+              <caret line="13" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prob3-largest_prime_factor.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/prob3-largest_prime_factor.py">
+      <file leaf-file-name="prob6-sum_square_difference.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/prob6-sum_square_difference.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4615386" vertical-offset="105" max-vertical-offset="750">
-              <caret line="13" column="20" selection-start-line="8" selection-start-column="0" selection-end-line="13" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.23622048" vertical-offset="0" max-vertical-offset="660">
+              <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -60,6 +60,7 @@
         <option value="$PROJECT_DIR$/prob4-largest_palindrome_product.py" />
         <option value="$PROJECT_DIR$/prob3-largest_prime_factor.py" />
         <option value="$PROJECT_DIR$/prob5-smallest_multiple.py" />
+        <option value="$PROJECT_DIR$/prob6-sum_square_difference.py" />
       </list>
     </option>
   </component>
@@ -136,7 +137,7 @@
       <recent name="$PROJECT_DIR$/.." />
     </key>
   </component>
-  <component name="RunManager" selected="Python.prob5-smallest_multiple">
+  <component name="RunManager" selected="Python.prob6-sum_square_difference">
     <configuration default="false" name="prob4-largest_palindrome_product" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -186,6 +187,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Project-Euler" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prob5-smallest_multiple.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="prob6-sum_square_difference" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Project-Euler" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prob6-sum_square_difference.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -312,16 +331,18 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.prob4-largest_palindrome_product" />
       <item index="1" class="java.lang.String" itemvalue="Python.prob3-largest_prime_factor" />
       <item index="2" class="java.lang.String" itemvalue="Python.prob5-smallest_multiple" />
+      <item index="3" class="java.lang.String" itemvalue="Python.prob6-sum_square_difference" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.prob5-smallest_multiple" />
-        <item index="1" class="java.lang.String" itemvalue="Python.prob4-largest_palindrome_product" />
-        <item index="2" class="java.lang.String" itemvalue="Python.prob3-largest_prime_factor" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.prob6-sum_square_difference" />
+        <item index="1" class="java.lang.String" itemvalue="Python.prob5-smallest_multiple" />
+        <item index="2" class="java.lang.String" itemvalue="Python.prob4-largest_palindrome_product" />
+        <item index="3" class="java.lang.String" itemvalue="Python.prob3-largest_prime_factor" />
       </list>
     </recent_temporary>
   </component>
@@ -621,14 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prob1-multiples_of_3_and_5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prob4-largest_palindrome_product.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13648294" vertical-offset="593" max-vertical-offset="1185">
@@ -637,18 +650,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/prob5-smallest_multiple.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.915493" vertical-offset="0" max-vertical-offset="1290">
+          <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/prob3-largest_prime_factor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4615386" vertical-offset="105" max-vertical-offset="750">
+        <state vertical-scroll-proportion="0.2535211" vertical-offset="105" max-vertical-offset="750">
           <caret line="13" column="20" selection-start-line="8" selection-start-column="0" selection-end-line="13" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prob5-smallest_multiple.py">
+    <entry file="file://$PROJECT_DIR$/prob1-multiples_of_3_and_5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32394367" vertical-offset="935" max-vertical-offset="1290">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <caret line="13" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prob6-sum_square_difference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23622048" vertical-offset="0" max-vertical-offset="660">
+          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
           <folding />
         </state>
       </provider>
