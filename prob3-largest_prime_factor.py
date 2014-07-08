@@ -2,7 +2,7 @@ from math import sqrt
 
 num = 600851475143
 largest_prime_factor = num
-max_check = int(sqrt(num))
+MAX_CHECK = int(sqrt(num))
 
 next_prime = 2
 primes = [next_prime]
@@ -13,7 +13,7 @@ def is_divisible(num, divisor):
     else:
         return False
 
-def find_next_prime(next_prime):
+def find_next_prime(next_prime, max_check):
     is_prime = False
     while not is_prime:
         is_prime = True
@@ -34,11 +34,11 @@ if is_divisible(num, next_prime):
 next_prime=3
 primes.append(next_prime)
 
-while next_prime < max_check and next_prime <= num:
+while next_prime < MAX_CHECK and next_prime <= num:
     if is_divisible (num, next_prime):
         num = num/next_prime
         largest_prime_factor = next_prime
 
-    next_prime = find_next_prime(next_prime)
+    next_prime = find_next_prime(next_prime, MAX_CHECK)
 
 print largest_prime_factor
