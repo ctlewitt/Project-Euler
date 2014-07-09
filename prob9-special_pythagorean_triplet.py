@@ -1,19 +1,19 @@
 from math import sqrt
 
-SUM = 1000 #because a+b+c=1000
+SUM = 1200 #because a+b+c=1000
 
 #Find solution
 solutions = []
 found_solution = False
 for a in range(1, SUM):
-    for b in range(a + 1, SUM):
+    for b in range(a, SUM):
         c = SUM - (a + b)
         if c > b:
             hypoten = sqrt(a**2 + b**2)
             if c == hypoten:
                 found_solution = True
                 solutions.append([a, b, c])
-                
+
 #Print solution
 if found_solution:
     print "solutions:"
