@@ -18,16 +18,3 @@
 84580156166097919133875499200524063689912560717606
 05886116467109405077541002256983155200055935729725
 71636269561882670428252483600823257530420752963450
-
-#num_digits = 13
-#comparator = 0
-#read in number
-#product = product of first 13 digits
-#if product > comparator:
-    #comparator = product
-#get next digit (append to mini list)
-#if first_digit != 0:
-    #product /= first_digit
-    #product *= next_digit
-#else:
-    #product = product of 13 current digits
