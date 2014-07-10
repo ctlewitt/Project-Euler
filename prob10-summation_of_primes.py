@@ -20,6 +20,7 @@ def find_next_prime(next_prime):
                 is_prime = False
                 break
     primes.append(next_prime)
+    print next_prime
     return next_prime
 
 
