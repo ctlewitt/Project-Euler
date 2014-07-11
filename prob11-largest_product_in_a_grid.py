@@ -1,11 +1,16 @@
+def get_num_grid(file_name):
+#reads file in and turns into list of lists
+    num_grid = []
+    with open(file_name) as f:
+        for line in f:
+            num_grid.append(line.split())
+    return num_grid
+
 #declare variables
     #grid = []
     #comparator = 0
 
-#take in file
-    #read in each row
-    #turn row into list of numbers
-    #append each list onto list of lists to form "grid"
+num_grid = get_num_grid("prob11-number_grid.txt")
 
 #determine width and height of grid using length of lists
 
@@ -16,14 +21,8 @@
     #check diagonal, down to the left products
 
 
-def get_num_grid(file_name):
-    num_grid = []
-    with open(file_name) as f:
-        for line in f:
-            num_grid.append(line.split())
-    return num_grid
 
 
-num_grid = get_num_grid("prob11-number_grid.txt")
+
 
 print num_grid
