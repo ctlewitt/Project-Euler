@@ -15,19 +15,45 @@
 #The second is above.  Assuming that we want 500 factors, 250 of them need below the square root.
 #So. let's start calculating factors of numbers that are above the square of 250!  Yeah!!!!!!
 
-#OUTLINE:
-#MIN_FACTORS = 500
-#counter = 0
-#triangle = 0
-#while triangle < (MIN_FACTORS/2)**2:
-    #counter += 1
-    #triangle = get_next_triangle(counter)
+#To calculate factors, I'll start by doing mods up to the square root, then I'll just divide the number by each known factor
+#to find the rest of the factors.  Not optimal, but hopefully good enough given the previous optimization.
 
-#still_looking = True
-#while still_looking:
-    #counter += 1
-    #triangle = get next triangle(counter)
-    #num_factors = find_num_factors(triangle)
-    #if num_factors >= 500:
-        #still_looking = False
-#print "The first triangle with over 500 factors is " + str(triangle) + "."
+from math import sqrt
+
+def get_next_triangle(counter, triangle):
+    next_triangle = triangle + counter
+    return next_triangle
+
+def find_num_factors(triangle):
+    factor = 1
+    factors = []
+    while factor <= sqrt(triangle):
+        if triangle % factor == 0:
+            factors.append(factor)
+        factor += 1
+    for factor in factors:
+        factor_partner = triangle / factor
+        factors.append(factor_partner)
+    return len(factors)
+
+
+
+#OUTLINE:
+MIN_FACTORS = 500
+counter = 0
+triangle = 0
+while triangle < (MIN_FACTORS/2)**2:
+    counter += 1
+    triangle = get_next_triangle(counter, triangle)
+    print "tri: " + str(triangle)
+
+still_looking = True
+while still_looking:
+    counter += 1
+    triangle = get_next_triangle(counter, triangle)
+    print "tri: " + str(triangle)
+    num_factors = find_num_factors(triangle)
+    print "num_factors: " + str(num_factors)
+    if num_factors >= 500:
+        still_looking = False
+print "The first triangle with over 500 factors is " + str(triangle) + "."
