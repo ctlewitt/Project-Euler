@@ -12,6 +12,7 @@
 #the number would have.  For a number N, whose prime factorization is (p1^n1)*(p2^n2)*(p2^n3)...(pm^nm), the number of
 #factors N has is equal to (1+n1)(1+n2)(1+n3)...(1+nm).  (Add one to the multiplicity of each of the prime factors and
 #then multiply them by each other.)
+# (Mathematical formula for finding num factors from prime factorization was given by user lurflurf on this website: http://www.physicsforums.com/showthread.php?t=80936)
 #As a side note, the factors of a number could probably be calculated from its prime factors using recursion, but that's outside the scope
 #of this question.
 
