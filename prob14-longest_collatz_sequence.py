@@ -14,41 +14,56 @@ def is_divisible(num, divisor):
     else:
         return False
 
-sequence_steps = {}
-sequence_steps[1] = 1
-winner = [1, 1] #best [starter, steps]
-starter_even = False
-for starter in range(2, MAX):
-    starter_even = not starter_even
-    num = starter
-    num_even = starter_even
-    steps = 1
-    if starter_even:
-        if starter in sequence_steps.keys():
-            print "starter: " + str(starter) + "already calculated: ",
-            num = 1
-            steps = sequence_steps[starter]
-            print steps
-    while num != 1:
-        if num_even:
-            num /= 2
-            num_even = is_divisible(num, 2)
-        else:
-            num = 3*num + 1
-            num_even = True
-        steps += 1
-        print "num: " + str(num) + " steps: " + str(steps)
-        if num in sequence_steps.keys():
-            steps += sequence_steps[num]
-            print "starter: " + str(starter) + " already calculated: ",
-            break
+def collatz_sequence(n_temp, collatz):
+    #check if repeat number
+    if n_temp in collatz:
+#        if is_even == False:
+#            if n_temp*2 not in collatz.keys(): ADD BACK IN TO SEE IF FASTER
+#            collatz[n_temp*2] = collatz[n_temp] + 1
+        return [n_temp], collatz[n_temp]
+    else:
+        mini_collatz = [n_temp]
+        seq_len = 1
+        while n_temp != 1:
+            #find next number in sequence
+            if is_divisible(n_temp, 2):
+                n_temp /= 2
+            else:
+                n_temp = 3 * n_temp + 1
+            #decide if next number is new. if new, add it and proceed.  if not new, use old data and stop
+            if n_temp in collatz.keys():
+                seq_len += collatz[n_temp]
+                break
+            else:
+                mini_collatz.append(n_temp)
+                seq_len += 1
+#            print "n_temp: ",
+#            print n_temp
+#    print "mini_collatz:",
+#    print mini_collatz
+    return mini_collatz, seq_len
 
-    sequence_steps[starter] = steps
-    if steps > winner[1]:
-        winner = [starter, steps]
-        print "winner"
-    if not starter_even:
-        sequence_steps[3*starter+1] = steps - 1
-        #since it's steps-1 steps, this should never be the max number of steps
-        print "saved time: starter: " + str(starter) + " steps: " + str(steps)
-print winner
+MAX = 1000000
+HALF_MAX = MAX/2
+is_even = False
+collatz = {}
+for n in range(333333, MAX):
+    mini_collatz, seq_len = collatz_sequence(n, collatz)
+    for i, num in enumerate(mini_collatz):
+        collatz[num] = seq_len - i
+    #if the starting number is odd, the sequence starting with double that number has one more number
+
+    if n <= HALF_MAX:
+        collatz[n*2] = seq_len + 1
+
+max = [1,1]
+for n in collatz.keys():
+    if collatz[n]>max[1]:
+        max = [n, collatz[n]]
+
+print collatz
+print max
+print collatz[910107]
+
+#for each number in the list
+#for each odd number, double the starter and add 1 number to the steps
