@@ -46,8 +46,8 @@
       <file leaf-file-name="prob16_power-digit-sum.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prob16_power-digit-sum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="222">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4054054" vertical-offset="0" max-vertical-offset="222">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -160,25 +160,7 @@
       <recent name="$PROJECT_DIR$/.." />
     </key>
   </component>
-  <component name="RunManager" selected="Python.prob14-longest_collatz_sequence">
-    <configuration default="false" name="prob10-summation_of_primes" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Project-Euler" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prob10-summation_of_primes.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.prob16_power-digit-sum">
     <configuration default="false" name="prob11-largest_product_in_a_grid" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,6 +228,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Project-Euler" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prob14-longest_collatz_sequence.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="prob16_power-digit-sum" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Project-Euler" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prob16_power-digit-sum.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -373,19 +373,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.prob10-summation_of_primes" />
-      <item index="1" class="java.lang.String" itemvalue="Python.prob11-largest_product_in_a_grid" />
-      <item index="2" class="java.lang.String" itemvalue="Python.prob12-highly_divisible_triangular_number" />
-      <item index="3" class="java.lang.String" itemvalue="Python.prob13-large_sum" />
-      <item index="4" class="java.lang.String" itemvalue="Python.prob14-longest_collatz_sequence" />
+      <item index="0" class="java.lang.String" itemvalue="Python.prob11-largest_product_in_a_grid" />
+      <item index="1" class="java.lang.String" itemvalue="Python.prob12-highly_divisible_triangular_number" />
+      <item index="2" class="java.lang.String" itemvalue="Python.prob13-large_sum" />
+      <item index="3" class="java.lang.String" itemvalue="Python.prob14-longest_collatz_sequence" />
+      <item index="4" class="java.lang.String" itemvalue="Python.prob16_power-digit-sum" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.prob14-longest_collatz_sequence" />
-        <item index="1" class="java.lang.String" itemvalue="Python.prob13-large_sum" />
-        <item index="2" class="java.lang.String" itemvalue="Python.prob12-highly_divisible_triangular_number" />
-        <item index="3" class="java.lang.String" itemvalue="Python.prob11-largest_product_in_a_grid" />
-        <item index="4" class="java.lang.String" itemvalue="Python.prob10-summation_of_primes" />
+        <item index="0" class="java.lang.String" itemvalue="Python.prob16_power-digit-sum" />
+        <item index="1" class="java.lang.String" itemvalue="Python.prob14-longest_collatz_sequence" />
+        <item index="2" class="java.lang.String" itemvalue="Python.prob13-large_sum" />
+        <item index="3" class="java.lang.String" itemvalue="Python.prob12-highly_divisible_triangular_number" />
+        <item index="4" class="java.lang.String" itemvalue="Python.prob11-largest_product_in_a_grid" />
       </list>
     </recent_temporary>
   </component>
@@ -798,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prob16_power-digit-sum.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="222">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4054054" vertical-offset="0" max-vertical-offset="222">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
           <folding />
         </state>
       </provider>
