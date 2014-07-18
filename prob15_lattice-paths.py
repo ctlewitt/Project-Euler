@@ -79,7 +79,7 @@ if DIM+1 >= step:
 
 #steps 6 to DIM+1) {1-triangle to dim-triangle}, {1-triangle to (dim-1)-triangle}, ..., {1-triangle}
 multiplier = 1
-while DIM+1 >= step:
+while DIM+2 >= step:
     paths += add_reducing_triangle_progressions(DIM)
     print "step:" + str(step)
     print "paths:" + str(paths)
@@ -89,3 +89,10 @@ print "There are %s possible paths you can take to traverse a %s by %s lattice."
 
 end = time()
 print "it took %s seconds" %(end-start)
+
+#quick test
+test = 0
+for num in range(1, 22):
+    test += num * (DIM +2 - num)
+    print str(test) + "=" + str(num) + "*" + str(DIM+2-num)
+print "test" + str(test)
