@@ -73,9 +73,30 @@ while DIM+1 >= step:
     paths += add_reducing_triangle_progressions(DIM)
     step += 1
 
-if DIM >=6:
+if DIM == 6:
     paths += add_reducing_triangle_progressions(DIM)
     paths -= 2*(add_col(DIM))
+
+if DIM == 7:
+    paths += 3*add_reducing_triangle_progressions(DIM)
+#    paths += 2*add_reducing_triangle_progressions(DIM-1)
+#    paths -= 2*(add_col(DIM))
+#    paths += 2*add_triangle(DIM-1)
+
+print add_reducing_triangle_progressions(DIM)
+print add_triangle_progression(DIM)
+print add_triangle(DIM)
+print add_col(DIM)
+
+
+
+#    paths -= 2*(add_col(DIM-1))
+#    paths -= 2*(add_col(DIM-2))
+#    paths -= 2*(add_col(DIM-3))
+
+
+
+
 
 print "There are %s possible paths you can take to traverse a %s by %s lattice." %(paths, DIM, DIM)
 
