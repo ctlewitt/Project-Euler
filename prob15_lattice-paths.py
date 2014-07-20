@@ -1,4 +1,5 @@
 from time import time
+from math import factorial
 
 start = time()
 DIM = 7
@@ -103,3 +104,5 @@ print "There are %s possible paths you can take to traverse a %s by %s lattice."
 end = time()
 print "it took %s seconds" %(end-start)
 
+shortcut_path = factorial(40)/(factorial(20)*factorial(20))
+print shortcut_path
