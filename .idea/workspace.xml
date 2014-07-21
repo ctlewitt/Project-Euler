@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="prob19_counting-sundays.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/prob19_counting-sundays.py">
+      <file leaf-file-name="prob20_factorial-digit-sum.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/prob20_factorial-digit-sum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39144737" vertical-offset="0" max-vertical-offset="608">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.25164473" vertical-offset="0" max-vertical-offset="608">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -68,6 +68,7 @@
         <option value="$PROJECT_DIR$/prob18_triangle.txt" />
         <option value="$PROJECT_DIR$/prob18_maximum-path-sum-i.py" />
         <option value="$PROJECT_DIR$/prob19_counting-sundays.py" />
+        <option value="$PROJECT_DIR$/prob20_factorial-digit-sum.py" />
       </list>
     </option>
   </component>
@@ -144,25 +145,7 @@
       <recent name="$PROJECT_DIR$/.." />
     </key>
   </component>
-  <component name="RunManager" selected="Python.prob19_counting-sundays">
-    <configuration default="false" name="prob16_power-digit-sum" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Project-Euler" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prob16_power-digit-sum.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.prob20_factorial-digit-sum">
     <configuration default="false" name="prob15_lattice-paths" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -230,6 +213,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Project-Euler" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prob19_counting-sundays.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="prob20_factorial-digit-sum" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Project-Euler" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prob20_factorial-digit-sum.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -357,19 +358,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.prob16_power-digit-sum" />
-      <item index="1" class="java.lang.String" itemvalue="Python.prob15_lattice-paths" />
-      <item index="2" class="java.lang.String" itemvalue="Python.prob17_number-letter-counts" />
-      <item index="3" class="java.lang.String" itemvalue="Python.prob18_maximum-path-sum-i" />
-      <item index="4" class="java.lang.String" itemvalue="Python.prob19_counting-sundays" />
+      <item index="0" class="java.lang.String" itemvalue="Python.prob15_lattice-paths" />
+      <item index="1" class="java.lang.String" itemvalue="Python.prob17_number-letter-counts" />
+      <item index="2" class="java.lang.String" itemvalue="Python.prob18_maximum-path-sum-i" />
+      <item index="3" class="java.lang.String" itemvalue="Python.prob19_counting-sundays" />
+      <item index="4" class="java.lang.String" itemvalue="Python.prob20_factorial-digit-sum" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.prob19_counting-sundays" />
-        <item index="1" class="java.lang.String" itemvalue="Python.prob18_maximum-path-sum-i" />
-        <item index="2" class="java.lang.String" itemvalue="Python.prob17_number-letter-counts" />
-        <item index="3" class="java.lang.String" itemvalue="Python.prob15_lattice-paths" />
-        <item index="4" class="java.lang.String" itemvalue="Python.prob16_power-digit-sum" />
+        <item index="0" class="java.lang.String" itemvalue="Python.prob20_factorial-digit-sum" />
+        <item index="1" class="java.lang.String" itemvalue="Python.prob19_counting-sundays" />
+        <item index="2" class="java.lang.String" itemvalue="Python.prob18_maximum-path-sum-i" />
+        <item index="3" class="java.lang.String" itemvalue="Python.prob17_number-letter-counts" />
+        <item index="4" class="java.lang.String" itemvalue="Python.prob15_lattice-paths" />
       </list>
     </recent_temporary>
   </component>
@@ -428,13 +429,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/prob1-multiples_of_3_and_5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prob4-largest_palindrome_product.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="836" max-vertical-offset="1185">
@@ -780,8 +774,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prob19_counting-sundays.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39144737" vertical-offset="0" max-vertical-offset="608">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.4194079" vertical-offset="0" max-vertical-offset="608">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prob20_factorial-digit-sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25164473" vertical-offset="0" max-vertical-offset="608">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
