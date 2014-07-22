@@ -54,7 +54,7 @@ def get_sum_proper_divisors(prime_factors, num):
 
 #initialize variables
 primes = [2, 3]
-num_dict = {} #num: sum of proper divisors]
+num_dict = {} #num: sum of proper divisors
 
 #get sum of proper divisors of each number from 1 to MAX.
 #get prime factors of each number; get sum of proper divisors of each number from prime factors; record sum if in bounds and != number itself
@@ -68,11 +68,12 @@ for num in range(1, MAX+1):
 amicable_nums = []
 for num in num_dict.keys():
     sum = num_dict[num]
-    if num_dict[sum] == num:
-        if num not in amicable_nums:
-            amicable_nums.append(num)
-        if sum not in amicable_nums:
-            amicable_nums.append(sum)
+    if sum in num_dict.keys():
+        if num_dict[sum] == num:
+            if num not in amicable_nums:
+                amicable_nums.append(num)
+            if sum not in amicable_nums:
+                amicable_nums.append(sum)
 
 #add up amicable numbers
 sum_amic_nums = 0
