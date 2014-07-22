@@ -37,4 +37,6 @@ names.sort()
 total_score = 0
 for order_rank, name in enumerate(names, start=1):
     total_score += order_rank*name_letters_value(name, letter_values)
-print total_score
+
+#report answer
+print "The sum of all of the names' scores is " + str(total_score) + "."
