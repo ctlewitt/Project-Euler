@@ -1,26 +1,28 @@
-def find_repeat_length(i):
-    #divide 1 by i, long division style, myself
-    #keep a list of each variable at any given point
-    #dividend, quotient, remainder
-    #check if all 3 repeat
-    #find number of steps taken since then, not counting the current one
-    pass
-
-def test_for_repeat(i):
-    repeats = True
-    division = 1/i
-    if len(str(division)) < 10000:
-        repeats = False
-    return repeats
+def find_repeat_length(divisor):
+    remainders = []
+    dividend = 1
+    remainder = 1
+    while remainder != 0:
+        quotient = dividend / divisor #divide
+        product = quotient * divisor #multiply
+        remainder = dividend - product #subtract
+        if remainder in remainders: #check if repeating decimal
+            return len(remainders) - remainders.index(remainder)
+        else: #add remainder to list for tracking repeating decimals
+            remainders.append(remainder)
+        dividend = remainder * 10 #"bring down a 0"
+    return 0 #if not a repeating decimal
 
 max_length = 0
+max_i = 0
 
-for i in range(1, 1001):
-    is_repeat = test_for_repeat(i)
-    if is_repeat:
-        length = find_repeat_length(i)
-        if length > max_length:
-            max_length = length
-            max_i = i
+#check each number in 1/1 to 1/999 for its repeating decimal length
+for i in range(1, 1000):
+    repeat_length = find_repeat_length(i)
+    if repeat_length > max_length:
+        max_i = i
+        max_length = repeat_length
 
-print max_i
+#report results
+print "The repeating fraction with the longest repeat is 1/" + str(max_i) + "."
+print "Its repeat length is " + str(max_length) + " digits."
