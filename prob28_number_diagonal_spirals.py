@@ -1,5 +1,6 @@
 from timeit import timeit
 
+#collaborated with zach fror this project
 
 MAX_DIM = 1001
 JUMPER  = 8
