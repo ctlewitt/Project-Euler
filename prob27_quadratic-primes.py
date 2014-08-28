@@ -1,6 +1,6 @@
 from math import sqrt
 
-MAX_PRIME = 1997001
+MAX_PRIME = 1989015
 FIRST_PRIME = 2
 MAX_CHECK = sqrt(MAX_PRIME)
 
@@ -43,26 +43,35 @@ def generate_primes():
     for num in num_dict.keys():
         if num_dict[num] == "prime" or num_dict[num] == "":
             primes.append(num)
-    primes.sort()
+#    primes.sort()
     return primes
 
 def calculate_possible_primes(a, b, primes):
 #    print "a: " + str(a) + " b: " + str(b)
     #for a given a, b combination, generates list of possible primes and checks if they are primes
     #calc_primes = []
-    primes_index = 0
+#    primes_index = 0
     n = 0
+    generated_primes = []
+#    generated_primes.clear()
     all_primes = True
     while all_primes:
         possible_prime = n**2 + a*n + b
         if possible_prime not in primes:
             all_primes = False
+        else:
+            generated_primes.append(possible_prime)
+#            print len(generated_primes)
 #PUT THIS BACK LATER
 #        all_primes, primes_index = is_prime(possible_prime, primes, primes_index)
-        n += 1
+            n += 1
 #        print possible_prime,
 #    print
-    return n #equal to number of successful primes
+#    print "n^2 + " + str(a) + "n + " + str(b)
+#    unique_primes = set(generated_primes)
+#    print generated_primes
+#    print len(generated_primes)
+    return len(generated_primes) #equal to number of successful primes
 
 def is_prime(possible_prime, primes, primes_index):
     #checks if a given number is prime by comparing it with the list of primes
@@ -83,12 +92,17 @@ max_a = 0
 max_b = 0
 
 #go through each a, b combination (use double for loop)
-for a in range(-999, 1000):
-    for b in range(-999, 1000):
+#print calculate_possible_primes(1, 41, primes)
+#print calculate_possible_primes(-79, 1601, primes)
+
+
+for b in range(1000, 2, -1):
+    for a in range(1000, -(b)-1, -1):
     #generate list of possible primes, count how many are really primes
         num_primes = calculate_possible_primes(a, b, primes)
         #compare num_primes with max_primes and set new max values if num_primes is the new winner
         if num_primes > max_primes:
+            print "new max: " + str(num_primes) + "a, b: " + str(a) + ", " + str(b)
             max_primes = num_primes
             max_a = a
             max_b = b
