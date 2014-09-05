@@ -1,6 +1,6 @@
 from math import sqrt
 
-SUM = 1200 #because a+b+c=1000
+SUM = 1000 #because a+b+c=1000
 
 #Find solution
 solutions = []
