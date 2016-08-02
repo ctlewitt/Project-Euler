@@ -1,12 +1,10 @@
 from time import time
 
-#I know this isn't the most elegant solution, but it is my first program that uses recursion, and I'm really proud!!!  :)
-
 start = time()
 
 ROW = 0
 COL = 1
-#last_position = [row, col]
+
 
 def read_in_triangle(file_name):
     triangle = []
@@ -17,6 +15,7 @@ def read_in_triangle(file_name):
     triangle = turn_into_numbers(triangle)
     return triangle
 
+
 def turn_into_numbers(str_list):
     num_list = []
     for mini_str_list in str_list:
@@ -25,6 +24,7 @@ def turn_into_numbers(str_list):
             mini_num_list.append(int(str_num))
         num_list.append(mini_num_list)
     return num_list
+
 
 def find_all_paths(current_path, last_position, triangle, all_paths):
     if last_position[ROW] == len(triangle) - 1:
@@ -43,8 +43,10 @@ def find_all_paths(current_path, last_position, triangle, all_paths):
         find_all_paths(current_path0, next_position0, triangle, all_paths)
         find_all_paths(current_path1, next_position1, triangle, all_paths)
 
+
 #get triangle
 triangle = read_in_triangle("prob18_triangle.txt")
+
 
 #initialize variables
 all_paths = []
