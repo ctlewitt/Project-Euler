@@ -1,8 +1,6 @@
 #python3.5.1
 from time import time
 
-#I know this isn't the most elegant solution, but it is my first program that uses recursion, and I'm really proud!!!  :)
-
 start = time()
 
 ROW = 0
