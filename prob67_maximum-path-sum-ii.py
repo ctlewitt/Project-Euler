@@ -7,7 +7,6 @@ ROW = 0
 COL = 1
 
 
-# could probably optimize this better
 def read_in_triangle(file_name):
     with open(file_name) as f:
         triangle = [[int(num) for num in line.split()] for line in f]
