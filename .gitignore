@@ -21,6 +21,10 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+.idea/encodings.xml
+.DS_Store
+.gitignore~
+
 
 # Installer logs
 pip-log.txt
