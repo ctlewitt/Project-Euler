@@ -11,14 +11,14 @@
 from math import sqrt
 from timeit import timeit
 
-MAX_NUM = 2000000
+MAX_NUM= 2000000
 FIRST_PRIME = 2
 MAX_CHECK = sqrt(MAX_NUM)
 
 
-def mark_multiples(next_prime, num_dict):
+def mark_multiples(next_prime, num_dict, max_num):
     num_dict[next_prime] = "prime"
-    for multiple in range(next_prime ** 2, MAX_NUM, next_prime * 2): #skip every other multiple to avoid evens
+    for multiple in range(next_prime ** 2, max_num, next_prime * 2): #skip every other multiple to avoid evens
         num_dict[multiple] = "not prime"
     return num_dict
 
@@ -30,34 +30,48 @@ def find_next_prime(next_prime, num_dict):
                 break
     return next_prime
 
-def set_up_num_dict():
+
+def set_up_num_dict(max_num):
 #set up num_dict of numbers to be marked "prime" or "not prime"
 #default is "" when not yet checked
     num_dict = {}
-    for number in range(3, MAX_NUM, 2):
+    for number in range(3, max_num, 2):
         num_dict[number] = ""
     return num_dict
 
-def calculate_answer():
+def get_primes(max_num):
     #initialize variables and values
-    num_dict = set_up_num_dict()
-    sum = 0
+    num_dict = set_up_num_dict(max_num)
     #start with FIRST_PRIME (2) already established
     num_dict[FIRST_PRIME] = "prime"
     primes = [FIRST_PRIME]
     next_prime = FIRST_PRIME
 
-
-    while next_prime < MAX_CHECK:
+    while next_prime < sqrt(max_num):
         next_prime = find_next_prime(next_prime, num_dict)
-        num_dict = mark_multiples(next_prime, num_dict)
+        num_dict = mark_multiples(next_prime, num_dict, max_num)
+
+    return num_dict
+
+
+def add_primes(num_dict):
+    sum = 0
 
     for num in num_dict.keys():
         if num_dict[num] == "prime" or num_dict[num] == "":
             sum += num
 
-    print "sum of primes below " + str(MAX_NUM) + " is " + str(sum) + "."
+    return sum
 
-print timeit(stmt = calculate_answer, number = 1) #result is 63.4923110008 seconds
+
+def calculate_answer():
+    num_dict = get_primes(MAX_NUM)
+    sum = add_primes(num_dict)
+
+    print ("sum of primes below " + str(MAX_NUM) + " is " + str(sum) + ".")
+
+if __name__ == "__main__":
+    print("it took {} seconds to calculate this".format(timeit(stmt = calculate_answer, number = 1))) #result is 63.4923110008 seconds
 #Currently I am using the Sieve of Eratosthenes
 #I've read that the Sieve of Atkin is faster
+
