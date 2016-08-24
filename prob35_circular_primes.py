@@ -28,6 +28,7 @@ def get_prime_rotations(prime):
             prime_rots.add(int(prime_str[digit_idx:]+prime_str[:digit_idx]))
     return prime_rots
 
+
 def get_ans():
     primes = get_primes(MAX_NUM)
     num_circular_primes = 0
