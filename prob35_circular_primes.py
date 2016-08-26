@@ -1,10 +1,9 @@
 from math import sqrt
-from prob10_summation_of_primes import get_primes
+from mathfunctions.primes import get_primes
 from timeit import timeit
 
 
 MAX_NUM = 1000000
-FIRST_PRIME = 2
 MAX_CHECK = sqrt(MAX_NUM)
 
 
